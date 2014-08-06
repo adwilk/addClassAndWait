@@ -1,0 +1,22 @@
+{
+    "name": "addclassandwait",
+    "title": "Add Class and Wait",
+    "description": "A jQuery plugin to add a class and wait for a transition to complete.",
+    "version": "0.0.1",
+    "author": {
+        "name": "adwilk",
+        "url": "https://github.com/adwilk"
+    },
+    "licenses": [
+        {
+            "type": "Apache License 2.0",
+            "url": "https://github.com/adwilk/addClassAndWait/blob/master/LICENSE"
+        }
+    ],
+    "homepage": "https://github.com/adwilk/addClassAndWait",
+    "docs": "https://github.com/adwilk/addClassAndWait",
+    "download": "https://github.com/adwilk/addClassAndWait",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
