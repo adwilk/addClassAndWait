@@ -60,6 +60,7 @@
 	      	<p class="medium">Not Started</p>
 		      <p class="slow">Not Started</p>
 		      <button>Run Demo</button>
+		      <a href="#" class="button .run"><span>Run Demo</span></a>
         </section>
 
         <footer>
@@ -71,7 +72,7 @@
       </div>
     </div>
     <script>
-			$('button').one('click',function(){
+			$('.run').one('click',function(){
 				$('p')
 					.text('Animating')
 					.addClassAndWait('demo')
