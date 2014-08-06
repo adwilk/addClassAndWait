@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<style>
+			body{
+				font-family:helvetica, arial;
+			}
+
+			h1{
+				color: red;
+				font-size: 16px;
+			}
+
+			.slow{
+				transition: 4s all;
+			}
+
+			.medium{
+				transition: 2s all;
+			}
+
+			.fast{
+				transition: 0.5s all;
+			}
+
+			.demo{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="fast">Not Started</h1>
+		<h1 class="medium">Not Started</h1>
+		<h1 class="slow">Not Started</h1>
+		<button>Run Demo</button>
+
+		<script>
+			$('button').click(function(){
+				$('h1')
+					.text('Animating')
+					.addClassAndWait('demo')
+					.done(function(collection){
+						collection
+							.text('Finished')
+					});
+			});
+		</script>
+	</body>
+</html>
