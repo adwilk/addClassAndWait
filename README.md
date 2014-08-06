@@ -2,10 +2,11 @@ Add Class And Wait
 ===============
 
 A jQuery plugin to add a class and wait for a transition to complete.
+If you select multiple elements with differing transition durations, the plug in will wait until all have finished.
 
 [View Demo](http://adwilk.github.io/addClassAndWait)
 
-Usage
+Usage:
 
 ```javascript
 $('button').click(function(){
