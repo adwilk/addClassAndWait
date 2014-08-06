@@ -7,9 +7,32 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <style>
+      p{
+				color: red;
+				font-size: 16px;
+			}
+
+			.slow{
+				transition: 4s all;
+			}
+
+			.medium{
+				transition: 2s all;
+			}
+
+			.fast{
+				transition: 0.5s all;
+			}
+
+			.demo{
+				color: blue;
+			}</style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://raw.githubusercontent.com/adwilk/addClassAndWait/master/jquery.addclassandwait.js"></script>
     <title>Addclassandwait by adwilk</title>
   </head>
 
@@ -31,10 +54,12 @@
         <hr>
 
         <section id="main_content">
-          <h3>
-<a name="add-class-and-wait-another-jquery-plugin" class="anchor" href="#add-class-and-wait-another-jquery-plugin"><span class="octicon octicon-link"></span></a>Add Class And Wait, another jquery plugin.</h3>
+          <h3><a name="add-class-and-wait-another-jquery-plugin" class="anchor" href="#add-class-and-wait-another-jquery-plugin"><span class="octicon octicon-link"></span></a>Add Class And Wait, another jquery plugin.</h3>
 
-<p>todo: write this page</p>
+          <p class="fast">Not Started</p>
+	      	<p class="medium">Not Started</p>
+		      <p class="slow">Not Started</p>
+		      <button>Run Demo</button>
         </section>
 
         <footer>
@@ -45,5 +70,16 @@
         
       </div>
     </div>
+    <script>
+			$('button').click(function(){
+				$('p')
+					.text('Animating')
+					.addClassAndWait('demo')
+					.done(function(collection){
+						collection
+							.text('Finished')
+					});
+			});
+		</script>
   </body>
 </html>
